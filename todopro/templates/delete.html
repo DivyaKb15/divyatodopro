@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="shadow-none p-3 mb-5 bg-light rounded">
+                <form method="post">
+                    {% csrf_token %}
+                    <h5>Are You Sure This Task Is Done ?</h5>
+                    <button type="submit" class=" btn btn-danger">CONFIRM</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
